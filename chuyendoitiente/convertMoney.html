@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</title>
+    
+</head>
+<body>
+    <form action="convertMoney.html" method="GET" name="convertM">
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td> <input  type="number" name="amount" value="" id="amount"> </td>
+                <td> <select name="type" id="from" onchange="">
+                    <option value="1"> VND</option>
+                    <option value="2"> USD </option>
+                </select>
+                    
+                </td>
+                <td>
+                    <select name="type" id="to">
+                        <option value="1"> VND</option>
+                        <option value="2"> USD </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" name="convert" value="convert" onclick="myFunction()"> 
+                </td>
+            </tr>
+            
+        </table>
+        <script >
+            function myFunction(){
+                 let x = document.getElementById("amount").value;
+                 let y= document.getElementById("from").value;
+                 let z= document.getElementById("to").value;
+                if (y==1) {
+                    if(z==2) {
+                        alert("so tien la :" +x/23000 +" "+"usd");
+                     }else(alert("so tien la :" +x))
+                }
+                else {if(z==1) { alert("so tien la :" +x*23000 +" "+"vnd")
+                    }
+                    else(alert("so tien la :" +x))
+                    }
+
+                 }
+        </script>
+    </form>
+    
+</body>
+</html>
