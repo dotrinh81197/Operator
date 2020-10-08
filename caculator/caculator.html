@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Ứng dụng máy tính </title>
+    
+</head>
+<body>
+    <h1>Caculator</h1>
+    <table>
+        <tr>
+            <td colspan="2"> <input type="number" name="num" id="numberone"></td>
+            <td colspan="2" ><input type="number" name="num" id="numbertwo"></td>
+        </tr>
+        <tr>&nbsp;</tr>
+        <tr>
+            <td> <input type="button" name="addi" value="Addition(+)" id="add" onclick="addition()"> </td>
+            <td> <input type="button" name="subt" value="Subtraction(-)" id="sub" onclick="subtraction()"> </td>
+            <td> <input type="button" name="mult" value="Multiplication(x)" id="mul" onclick="multiplication()"> </td>
+            <td> <input type="button" name="divi" value="Division(/)" id="div" onclick="division()"> </td>
+            
+        </tr>
+    </table>
+    <span>Result:</span>
+    <span id="result"> </span>
+    <script  src="caculator.js"></script>
+</body>
+</html>
